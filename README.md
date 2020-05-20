@@ -1,3 +1,3 @@
 # PytorchPortfolio
 
-This repository enlists the projects and works done using Pytorch when working on the Pytorch course.
+This repository presents a portfolio of all the projects and works done using Pytorch.
