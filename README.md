@@ -1,3 +1,3 @@
-# PytorchPortfolio
+# ReverseImageSearchEngine
 
-This repository presents a portfolio of all the projects and works done using Pytorch.
+This repository presents a project for the Reverse Image Search Engine created using Python and Flask.
