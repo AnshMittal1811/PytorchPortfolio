@@ -1,3 +1,3 @@
 # ReverseImageSearchEngine
 
-This repository presents a project for the Reverse Image Search Engine created using Python and Flask.
+This repository contains a project for the Reverse Image Search Engine created using Python and Flask.
