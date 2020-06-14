@@ -25,7 +25,7 @@ session = tf.Session()
 session.run(tf.global_variables_initializer())
 #Restore session
 saver = tf.train.Saver()
-saver.restore(session, 'saver/model_epoch_5.ckpt')
+saver.restore(session, 'saver/model_epoch_2.ckpt')
 
 #Load training set vectors
 with open('hamming_train_vectors.pickle', 'rb') as f:
@@ -63,8 +63,7 @@ def upload():
 	result_final = []
 
 	for img in result:
-		result_final.append("images/"+img.split("/")[-1]) #example: cifar/train/0_frog.png -> [cifar
-        , train, 0_frog.png] -> [-1] = 0_frog.png
+		result_final.append("images/"+img.split("/")[-1]) #example: cifar/train/0_frog.png -> [cifar, train, 0_frog.png] -> [-1] = 0_frog.png
 
 	return render_template("result.html", image_name=img_name, result_paths=result_final[:-2]) #added [:-2] just to have equal number of images in the result page per row
 
@@ -74,6 +73,5 @@ def send_image(filename):
 	return send_from_directory("uploads", filename)
 
 #Start the application
-
 if __name__ == "__main__":
 	app.run(port=5000, debug=True)
